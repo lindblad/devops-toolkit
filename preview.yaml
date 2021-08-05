@@ -14,7 +14,7 @@ spec:
     helm:
       values: |
         image:
-          repository: lindblad/devops-toolkit
+          repository: vfarcic/devops-toolkit
           tag: {{.IMAGE_TAG}}
         ingress:
           host: {{.APP_ID}}.20.86.207.9.sslip.io
