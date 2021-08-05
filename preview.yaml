@@ -9,15 +9,15 @@ spec:
   project: previews
   source:
     path: helm
-    repoURL: https://github.com/vfarcic/devops-toolkit.git
+    repoURL: https://github.com/lindblad/devops-toolkit.git
     targetRevision: HEAD
     helm:
       values: |
         image:
-          repository: vfarcic/devops-toolkit
+          repository: lindblad/devops-toolkit
           tag: {{.IMAGE_TAG}}
         ingress:
-          host: {{.APP_ID}}.devopstoolkitseries.com
+          host: {{.APP_ID}}.20.86.207.9.sslip.io
       version: v3
   destination:
     namespace: "{{.APP_ID}}"

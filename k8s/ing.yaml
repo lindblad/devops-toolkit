@@ -13,4 +13,4 @@ spec:
       - backend:
           serviceName: devops-toolkit
           servicePort: 80
-    host: devopstoolkitseries.com
+    host: devopstoolkitseries.20.86.207.9.sslip.io

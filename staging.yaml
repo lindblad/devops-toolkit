@@ -9,7 +9,7 @@ spec:
   project: staging
   source:
     path: helm
-    repoURL: https://github.com/vfarcic/devops-toolkit.git
+    repoURL: https://github.com/lindblad/devops-toolkit.git
     targetRevision: HEAD
     helm:
       values: |
@@ -17,7 +17,7 @@ spec:
           repository: vfarcic/devops-toolkit
           tag: {{.IMAGE_TAG}}
         ingress:
-          host: staging.devopstoolkitseries.com
+          host: staging.devopstoolkitseries.20.86.207.9.sslip.io
       version: v3
   destination:
     namespace: staging
